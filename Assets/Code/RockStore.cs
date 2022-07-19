@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class RockStore : MonoBehaviour
 {
     public Text Wood;
+    public Text Rock;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,8 @@ public class RockStore : MonoBehaviour
         {
             WoodCounter.Woodz -= 10;
             Wood.text = WoodCounter.Woodz.ToString();
+            RockCounter.Rockz += 1;
+            Rock.text = RockCounter.Rockz.ToString();
             Debug.Log("Hit");
         }
     }
