@@ -20,7 +20,7 @@ public class RockManager : MonoBehaviour
         if (rockHealth <= 0f)
         {
             Destroy(gameObject);
-            RockCounter.Rockz += Random.Range(+3, +11);
+            RockCounter.Rockz += Random.Range(+3, +5);
             Rock.text = RockCounter.Rockz.ToString();
         }
     }

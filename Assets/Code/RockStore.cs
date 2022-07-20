@@ -7,6 +7,7 @@ public class RockStore : MonoBehaviour
 {
     public Text Wood;
     public Text Rock;
+    public GameObject Nig;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class RockStore : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.V))
         {
+            Nig.SetActive(true);
             if (WoodCounter.Woodz >= 10)
             {
                 WoodCounter.Woodz -= 10;
