@@ -16,17 +16,37 @@ public class RockStore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyUp(KeyCode.V))
+        {
+            if (WoodCounter.Woodz >= 10)
+            {
+                WoodCounter.Woodz -= 10;
+                Wood.text = WoodCounter.Woodz.ToString();
+                RockCounter.Rockz += 1;
+
+                Debug.Log("Hit");
+            }
+            
+            Rock.text = RockCounter.Rockz.ToString();
+        }
         
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(WoodCounter.Woodz >= 10)
-        {
-            WoodCounter.Woodz -= 10;
-            Wood.text = WoodCounter.Woodz.ToString();
-            RockCounter.Rockz += 1;
-            Rock.text = RockCounter.Rockz.ToString();
-            Debug.Log("Hit");
-        }
+        //if (Input.GetKeyUp(KeyCode.V))
+        //{
+            
+            //if (WoodCounter.Woodz >= 10)
+            //{
+            //    WoodCounter.Woodz -= 10;
+            //    Wood.text = WoodCounter.Woodz.ToString();
+            //    RockCounter.Rockz += 1;
+            //    Rock.text = RockCounter.Rockz.ToString();
+            //    Debug.Log("Hit");
+            //}
+            
+        //}
     }
+
+    
 }

@@ -24,7 +24,7 @@ public class SelectionManagerStone : MonoBehaviour
                     chopText.SetActive(true);
                     if (Input.GetKeyDown(KeyCode.Mouse0))
                     {
-                        selection.GetComponent<TreeManager>().ChopTree(chopDamage);
+                        selection.GetComponent<RockManager>().ChopRock(chopDamage);
                         GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
                         Destroy(impactGO, 2f);
                     }
