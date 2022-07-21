@@ -9,6 +9,7 @@ TagManager:
   - Rock
   - Iron
   - Gold
+  - Quartz
   layers:
   - Default
   - TransparentFX
