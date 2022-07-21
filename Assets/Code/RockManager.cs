@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class RockManager : MonoBehaviour
 {
-    public float rockHealth = 10f;
+    public float rockHealth = 20f;
     public Text Rock;
     private int rock = 0;
     [SerializeField] Image foreground = null;
@@ -15,7 +15,7 @@ public class RockManager : MonoBehaviour
     {
         rockHealth -= damage;
 
-        foreground.fillAmount = rockHealth / 10f;
+        foreground.fillAmount = rockHealth / 20f;
 
         if (rockHealth <= 0f)
         {
