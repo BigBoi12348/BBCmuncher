@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DiamondManager : MonoBehaviour
 {
-    public float diamondHealth = 100f;
+    public float diamondHealth = 250f;
     public Text Diamond;
     private int diamond = 0;
     [SerializeField] Image foreground = null;
@@ -14,7 +14,7 @@ public class DiamondManager : MonoBehaviour
     {
         diamondHealth -= damage;
 
-        foreground.fillAmount = diamondHealth / 100f;
+        foreground.fillAmount = diamondHealth / 250f;
 
         if (diamondHealth <= 0f)
         {

@@ -10,6 +10,7 @@ TagManager:
   - Iron
   - Gold
   - Quartz
+  - Diamond
   layers:
   - Default
   - TransparentFX
