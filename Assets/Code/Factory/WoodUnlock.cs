@@ -16,13 +16,13 @@ public class WoodUnlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.J))
+        if (Input.GetKeyUp(KeyCode.F))
         {
-            if (WoodCounter.Woodz >= 50)
+            if (WoodCounter.Woodz >= 100)
             {
                 woodfactory.SetActive(true);
                 Debug.Log("Money");
-                WoodCounter.Woodz -= 50;
+                WoodCounter.Woodz -= 100;
                 wood.text = WoodCounter.Woodz.ToString();
             }
         }

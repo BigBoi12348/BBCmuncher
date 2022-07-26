@@ -40,13 +40,20 @@ public class Upgrade : MonoBehaviour
                 axe.SetActive(false);
                 saxe.SetActive(true);
                 Debug.Log("Switch");
-                tree.SetActive(false);
+                //tree.SetActive(false);
                 rock.SetActive(true);
 
-                WoodCounter.Woodz -= 10;
+                WoodCounter.Woodz -= 30;
                 wood.text = WoodCounter.Woodz.ToString();
+
+                //SelectionManagerDiamond DamageUpdate();
+                //GetComponent<SelectionManagerDiamond>().chopDamage = +240f;
+                //SelectionManagerDiamond.chopDamage = + 240;
+                //SelectionManagerDiamond.chopDamage = 249f;
+                //Instantiate<SelectionManagerDiamond>().ChopDiamond(chopDamage);
+                //GetComponent<SelectionManagerDiamond>().chopDamage;
             }
-            
+
         }
         //if (Input.GetKeyUp(KeyCode.Alpha2))
         //{
@@ -66,24 +73,31 @@ public class Upgrade : MonoBehaviour
         //}
         if (Input.GetKeyUp(KeyCode.Alpha2))
         {
-            if(RockCounter.Rockz >= 10)
+            if(RockCounter.Rockz >= 50)
             {
                 saxe.SetActive(false);
                 qaxe.SetActive(true);
                 Debug.Log("Switch4");
-                gold.SetActive(false);
+                //gold.SetActive(false);
                 quartz.SetActive(true);
+
+                RockCounter.Rockz -= 50;
+                stone.text = RockCounter.Rockz.ToString();
             }
             
 
         }
         if (Input.GetKeyUp(KeyCode.Alpha3))
         {
+            if(QuartzCounter.Quartzy >=50)
             qaxe.SetActive(false);
             daxe.SetActive(true);
             Debug.Log("Switch5");
-            quartz.SetActive(false);
+            //quartz.SetActive(false);
             diamond.SetActive(true);
+
+            QuartzCounter.Quartzy -= 50;
+            quart.text = QuartzCounter.Quartzy.ToString();
         }
     }
 }

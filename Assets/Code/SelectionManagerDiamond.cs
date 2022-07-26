@@ -6,7 +6,10 @@ public class SelectionManagerDiamond : MonoBehaviour
 {
     [SerializeField] private string diamondTag = "Diamond";
     [SerializeField] private GameObject chopText;
-    [SerializeField] private float chopDamage = 5f;
+    //[SerializeField] private float chopDamage = 5f;
+    //public static float chopDamage = 5f;
+    [SerializeField] public float chopDamage = 3f;
+    public GameObject saxe;
 
     public GameObject impactEffect;
 
@@ -27,6 +30,11 @@ public class SelectionManagerDiamond : MonoBehaviour
                         selection.GetComponent<DiamondManager>().ChopDiamond(chopDamage);
                         GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
                         Destroy(impactGO, 2f);
+
+                       /* if (saxe.(active))
+                        {
+                            chopDamage = 240f;
+                        }*/    
                     }
 
                 }
@@ -37,4 +45,9 @@ public class SelectionManagerDiamond : MonoBehaviour
             }
         }
     }
+
+    /*public void DamageUpdate()
+    {
+        chopDamage = 249f;
+    }*/
 }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MeatManager : MonoBehaviour
 {
-    public float meatHealth = 50f;
+    public float meatHealth = 4f;
     public Text Meat;
     private int meat = 0;
     [SerializeField] Image foreground = null;
@@ -15,7 +15,7 @@ public class MeatManager : MonoBehaviour
     {
         meatHealth -= damage;
 
-        foreground.fillAmount = meatHealth / 50f;
+        foreground.fillAmount = meatHealth / 4f;
 
         if (meatHealth <= 0f)
         {
