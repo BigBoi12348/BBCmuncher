@@ -6,7 +6,7 @@ public class SelectionManagerDiamond : MonoBehaviour
 {
     [SerializeField] private string diamondTag = "Diamond";
     [SerializeField] private GameObject chopText;
-    [SerializeField] private float chopDamage = 1f;
+    [SerializeField] private float chopDamage = 5f;
 
     public GameObject impactEffect;
 

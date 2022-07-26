@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class IronManager : MonoBehaviour
 {
-    public float ironHealth = 50f;
+    public float ironHealth = 30f;
     public Text Iron;
     private int iron = 0;
     [SerializeField] Image foreground = null;

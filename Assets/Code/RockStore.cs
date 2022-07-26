@@ -7,7 +7,7 @@ public class RockStore : MonoBehaviour
 {
     public Text Wood;
     public Text Rock;
-    public GameObject Nig;
+    //public GameObject buy;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +17,9 @@ public class RockStore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.V))
+        if (Input.GetKeyUp(KeyCode.B))
         {
-            Nig.SetActive(true);
+            //buy.SetActive(true);
             if (WoodCounter.Woodz >= 10)
             {
                 WoodCounter.Woodz -= 10;

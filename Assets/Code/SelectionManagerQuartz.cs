@@ -6,7 +6,7 @@ public class SelectionManagerQuartz : MonoBehaviour
 {
     [SerializeField] private string quartzTag = "Quartz";
     [SerializeField] private GameObject chopText;
-    [SerializeField] private float chopDamage = 1f;
+    [SerializeField] private float chopDamage = 8f;
 
     public GameObject impactEffect;
 
